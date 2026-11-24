@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My game card</title>
+</head>
+<body>
+    <div id="game">
+        <h1>My game card</h1>
+        <p id="name"></p>
+        <p id="rank"></p>
+        <p id="score"></p>
+        <p id="greetings"></p>
+    </div>
+    <script>
+        var name="MRWHOSETHEGUY2"
+        var score=100
+
+        let rank;//null variable
+        if (score>=80){
+            rank="Legendary"
+        }
+        else if (score>=50){
+            rank="Grand master"
+        }
+        else if (score>=30){
+            rank="Master"
+        }
+        else {
+            rank="rookie"
+        }
+        document.getElementById("name").innerHTML=name
+        document.getElementById("rank").innerHTML=rank
+        document.getElementById("score").innerHTML=score
+        document.getElementById("greetings").innerHTML="Hello there player"
+    </script>
+    
+</body>
+</html>
